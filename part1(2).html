@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="part1main.js"></script>
+    <title>Data Set Display</title>
+    <link rel="stylesheet" href="part1output.css">
+
+</head>
+
+
+    <h1 class="directHead">Directy Of Calgary Events</h1>
+    <h3 class="directHead">Input a Date or an Event Type</h3>
+
+
+<div class="group">      
+    <input type="text" id="date" oninput="searchByTitle(this.value)">
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>event</label>
+  </div>
+
+  <div class="group">      
+    <input type="text" id="quadrant" oninput="searchByEvent(this.value)">
+    <span class="highlight"></span>
+    <span class="bar"></span>
+    <label>event</label>
+  </div>
+
+ 
+
+
+    <table id="searchresults" class="searchresults">
+
+    </table>
+
+    <table id="rez">
+
+    </table>
+</body>
+</html>
+

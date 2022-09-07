@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>resume</title>
+<link rel="stylesheet" href="part3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+
+<script src="part3.js"></script>
+
+<body>
+
+	<form onsubmit="math();return false">
+
+		<fieldset>
+			<legend>Fill out form below to complete order </legend>
+			<h1>New City Bakery</h1>
+			<h3>Enter personal information below</h3>
+			<table>
+				<tr>
+					<td>
+						<label for="fname">First name:</label>
+					</td>
+					<td>
+						<input type="text" id="fname" pattern="[A-Za-z]{1,32}" autofocus required>
+					</td>
+
+				</tr>
+				<tr>
+					<td>
+						<label for="lname">Last Name :</label>
+					</td>
+					<td>
+						<input type="text" id="lname" pattern="[A-Za-z]{1,32}" required>
+					</td>
+				</tr>
+			</table>
+			<table>
+				<tr>
+					<td>
+						<label for="phone">Enter a phone number:</label>
+						<input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+							placeholder="123-456-2345">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="postal">Enter your postal code</label>
+						<input type="text" name="postal" id="postal" pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]"
+							required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="street">Enter your street address</label>
+						<input type="text" name="street" id="street" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="email">Email Address:</label>
+						<input type="email" id="email" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>select a cake type</p>
+						<input type="button" id="sheetCake" value="Sheet Cake" onclick="getSheet()">
+						<input type="button" id="roundCake" value="Round Cake" onclick="getRound()">
+
+
+					</td>
+				</tr>
+			</table>
+			<div id="display"></div>
+
+
+		</fieldset>
+	</form>
+
+
+
+
+</body>
+
+</html>
